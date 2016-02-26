@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4"
+        >
+        <TextView
+            android:id="@+id/question_number"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:text="Question 1"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="@drawable/question_view_index"
+            />
+
+        <TextView
+            android:layout_below="@+id/question_number"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:adjustViewBounds="true"
+            android:layout_marginRight="@dimen/refresh_button_half_size"
+            android:layout_marginLeft="@dimen/refresh_button_half_size"
+            android:text="Question 1"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:background="@drawable/question_view_question_background"
+            />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="@dimen/refresh_button_size"
+        android:layout_height="@dimen/refresh_button_size"
+        android:src="@drawable/question_view_restart"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WordCatcherActivity"
+    android:weightSum="1080"
+    android:background="@drawable/word_catcher_background"
+    >
+    <lovelybroteam.com.englishwordcatcher.control.HubBar
+        android:id="@+id/hub_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="140"
+        />
+    <lovelybroteam.com.englishwordcatcher.control.QuestionView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="330"
+        />
+</LinearLayout>
